@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCsTGWpfmCYxwEl4IDlN7zZZgiAM19f3SI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>779818467994</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alinaduvanovaapp</string>
+	<key>PROJECT_ID</key>
+	<string>marblet-england-travel-guide</string>
+	<key>STORAGE_BUCKET</key>
+	<string>marblet-england-travel-guide.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:779818467994:ios:0f2960bcc38c24b55a9523</string>
+</dict>
+</plist>
