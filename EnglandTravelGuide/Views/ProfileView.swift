@@ -6,6 +6,10 @@ struct ProfileView: View {
     var onOpenSettings: (() -> Void)?
 
     @EnvironmentObject var appState: AppState
+    @State private var showDeleteConfirmation = false
+    @State private var showDeleteError = false
+    @State private var deleteErrorMessage: String?
+    @State private var isDeletingAccount = false
 
     private let headerBackground = Color(r: 19, g: 17, b: 27)
     private let headerShadow = Color(r: 128, g: 115, b: 221)
@@ -39,8 +43,40 @@ struct ProfileView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
                         .buttonStyle(.plain)
+                        .disabled(isDeletingAccount)
+                        .padding(.top, 8)
+
+                        Button {
+                            showDeleteConfirmation = true
+                        } label: {
+                            Text("Delete account")
+                                .font(.interBold(size: 16))
+                                .foregroundStyle(resetAccent)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 16)
+                                .background(Color.clear)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .stroke(resetAccent, lineWidth: 1)
+                                )
+                        }
+                        .buttonStyle(.plain)
+                        .disabled(isDeletingAccount)
                         .padding(.top, 8)
                     }
+                }
+                .alert("Delete account?", isPresented: $showDeleteConfirmation) {
+                    Button("Cancel", role: .cancel) {}
+                    Button("Delete", role: .destructive) {
+                        performDeleteAccount()
+                    }
+                } message: {
+                    Text("This will permanently delete your account and cannot be undone.")
+                }
+                .alert("Error", isPresented: $showDeleteError) {
+                    Button("OK") { deleteErrorMessage = nil }
+                } message: {
+                    Text(deleteErrorMessage ?? "Something went wrong")
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 24)
@@ -53,7 +89,7 @@ struct ProfileView: View {
                 .resizable()
                 .ignoresSafeArea()
         }
-        }
+    }
 
     private var header: some View {
         Text("Profile")
@@ -188,6 +224,33 @@ struct ProfileView: View {
         .overlay {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(headerShadow, lineWidth: 1)
+        }
+    }
+
+    private func performDeleteAccount() {
+        guard onSignOut != nil else { return }
+        isDeletingAccount = true
+        Task {
+            do {
+                try await AuthService.deleteAccount()
+                await MainActor.run {
+                    appState.resetAllData()
+                    onSignOut?()
+                }
+            } catch let error as AuthError {
+                await MainActor.run {
+                    deleteErrorMessage = error.errorDescription ?? error.localizedDescription
+                    showDeleteError = true
+                }
+            } catch {
+                await MainActor.run {
+                    deleteErrorMessage = error.localizedDescription
+                    showDeleteError = true
+                }
+            }
+            await MainActor.run {
+                isDeletingAccount = false
+            }
         }
     }
 }
