@@ -35,7 +35,11 @@ struct AttractionsView: View {
         AttractionItem(imageName: "attraction11", title: "Camden Market", description: "Eclectic market in North London.", region: "London", regionColor: .red, detailTags: ["2-3 hours", "Free"]),
         AttractionItem(imageName: "attraction12", title: "Buckingham Palace", description: "The King's official London residence.", region: "London", regionColor: .red, detailTags: ["2 hours", "Royal"]),
         AttractionItem(imageName: "attraction13", title: "Cotswolds", description: "Quintessential English villages.", region: "Countryside", regionColor: .red, detailTags: ["Full day", "Free"]),
-        AttractionItem(imageName: "attraction14", title: "Kew Gardens", description: "World-leading botanical gardens.", region: "London", regionColor: .red, detailTags: ["3-4 hours", "Nature"])
+        AttractionItem(imageName: "attraction14", title: "Kew Gardens", description: "World-leading botanical gardens.", region: "London", regionColor: .red, detailTags: ["3-4 hours", "Nature"]),
+        AttractionItem(imageName: "attraction15", title: "Edinburgh Castle", description: "Historic fortress overlooking Scotland's capital.", region: "Scotland", regionColor: .red, detailTags: ["2-4 hours", "History", "Castles", "Family-friendly"]),
+        AttractionItem(imageName: "attraction16", title: "Giant's Causeway", description: "Unique natural rock formation on the coast.", region: "Northern Ireland", regionColor: .orange, detailTags: ["2-3 hours", "Nature", "UNESCO", "Family-friendly"]),
+        AttractionItem(imageName: "attraction17", title: "Snowdonia National Park", description: "Mountain landscapes and dramatic Welsh scenery.", region: "Wales", regionColor: .purple, detailTags: ["4-8 hours", "Nature", "Hiking", "Family-friendly"]),
+        AttractionItem(imageName: "attraction18", title: "The Shard", description: "London's tallest skyscraper with panoramic views.", region: "London", regionColor: .red, detailTags: ["1-2 hours", "City Views", "Family-friendly"])
     ]
 
     private var filteredAttractions: [AttractionItem] {

@@ -15,7 +15,7 @@ struct FiltersView: View {
     private let dropdownSelectedBackground = Color(r: 74, g: 64, b: 150)
     private let accentOrange = Color(r: 255, g: 94, b: 0)
 
-    private let regionOptions = ["All Regions", "London", "South", "Midlands", "North", "Coast", "Countryside"]
+    private let regionOptions = ["All Regions", "London", "South", "Midlands", "North", "Coast", "Countryside", "Scotland", "Wales", "Northern Ireland"]
     private let categoryOptions = ["All Categories", "Museums", "Royal & Historic", "Parks & Nature", "Castles", "Markets", "Family", "Free"]
     private let statusOptions = ["All", "Visited", "Not Visited", "Favorites"]
 

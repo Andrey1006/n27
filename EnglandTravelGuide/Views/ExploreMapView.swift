@@ -40,7 +40,11 @@ struct ExploreMapView: View {
         ("attraction11", "Camden Market", "Eclectic market in North London", "London", 51.5392, -0.1466),
         ("attraction12", "Buckingham Palace", "The King's official London residence", "London", 51.5014, -0.1419),
         ("attraction13", "Cotswolds", "Quintessential English villages", "Countryside", 51.8860, -1.7600),
-        ("attraction14", "Kew Gardens", "World-leading botanical gardens", "London", 51.4847, -0.2947)
+        ("attraction14", "Kew Gardens", "World-leading botanical gardens", "London", 51.4847, -0.2947),
+        ("attraction15", "Edinburgh Castle", "Historic fortress overlooking Scotland's capital", "Scotland", 55.9486, -3.2008),
+        ("attraction16", "Giant's Causeway", "Unique natural rock formation on the coast", "Northern Ireland", 55.2408, -6.5116),
+        ("attraction17", "Snowdonia National Park", "Mountain landscapes and dramatic Welsh scenery", "Wales", 53.0685, -4.0762),
+        ("attraction18", "The Shard", "London's tallest skyscraper with panoramic views", "London", 51.5045, -0.0865)
     ]
 
     private var filteredBaseItems: [(attractionId: String, title: String, subtitle: String, region: String, lat: Double, lon: Double)] {

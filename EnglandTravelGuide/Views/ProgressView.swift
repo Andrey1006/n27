@@ -15,12 +15,15 @@ struct ProgressView: View {
     private let sectionHeaderGold = Color(r: 212, g: 175, b: 55)
 
     private let regionTotals: [(name: String, total: Int)] = [
-        ("London", 5),
+        ("London", 6),
         ("South", 4),
         ("Midlands", 2),
         ("North", 2),
         ("Coast", 1),
-        ("Countryside", 1)
+        ("Countryside", 1),
+        ("Scotland", 1),
+        ("Wales", 1),
+        ("Northern Ireland", 1)
     ]
 
     private var visitsByRegion: [String: Int] {

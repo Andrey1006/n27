@@ -428,6 +428,118 @@ enum AttractionDetailService {
                 "Bring a picnic or use on-site cafes"
             ],
             gettingThere: "Kew Gardens Underground station (District line & Overground), 5-minute walk. Riverboat services also available from Westminster Pier (seasonal)."
+        ),
+
+        AttractionDetail(
+            imageName: "attraction15",
+            title: "Edinburgh Castle",
+            shortDescription: "Historic fortress overlooking Scotland's capital",
+            region: "Scotland",
+            tags: ["2-4 hours", "History", "Castles", "City Landmark", "Scotland", "Family-friendly"],
+            timeNeeded: "2-4 hours",
+            ticketInfo: "~£19.50 adults, concessions available",
+            bestSeason: "Spring–early autumn; August for Festival atmosphere",
+            accessibility: "Partial accessibility due to historic structure",
+            overviewText: "Dominating the skyline of Edinburgh, this iconic fortress has served as royal residence, military stronghold and national symbol for centuries.",
+            highlights: [
+                "Crown Jewels of Scotland",
+                "Stone of Destiny",
+                "Great Hall",
+                "Mons Meg cannon",
+                "Panoramic city views"
+            ],
+            historyText: "With origins in the 12th century, the castle has played a central role in Scotland's turbulent history and royal heritage.",
+            tips: [
+                "Arrive at opening time",
+                "Buy tickets online",
+                "Stay for the One O'Clock Gun",
+                "Wear comfortable shoes"
+            ],
+            gettingThere: "Located at the top of the Royal Mile; 15-minute walk from Waverley Station."
+        ),
+
+        AttractionDetail(
+            imageName: "attraction16",
+            title: "Giant's Causeway",
+            shortDescription: "Unique natural rock formation on the coast",
+            region: "Northern Ireland",
+            tags: ["2-3 hours", "Nature", "UNESCO", "Coastal Views", "Hiking", "Family-friendly"],
+            timeNeeded: "2-3 hours",
+            ticketInfo: "Free access to rocks; Visitor Centre ~£15 adults",
+            bestSeason: "Late spring & summer for milder weather",
+            accessibility: "Shuttle bus available; uneven terrain near rocks",
+            overviewText: "This UNESCO World Heritage Site features around 40,000 interlocking basalt columns formed by volcanic activity millions of years ago.",
+            highlights: [
+                "Hexagonal basalt columns",
+                "Coastal cliff trails",
+                "Visitor Centre exhibition",
+                "Legendary tales of Finn McCool",
+                "Dramatic Atlantic views"
+            ],
+            historyText: "Formed by ancient volcanic eruptions, the site is steeped in Irish mythology and geological significance.",
+            tips: [
+                "Wear sturdy shoes",
+                "Check weather forecast",
+                "Visit early to avoid crowds",
+                "Combine with Causeway Coastal Route drive"
+            ],
+            gettingThere: "Accessible by car; bus tours from Belfast available."
+        ),
+
+        AttractionDetail(
+            imageName: "attraction17",
+            title: "Snowdonia National Park",
+            shortDescription: "Mountain landscapes and dramatic Welsh scenery",
+            region: "Wales",
+            tags: ["4-8 hours", "Nature", "Hiking", "Mountains", "Scenic Views", "Family-friendly"],
+            timeNeeded: "4-8 hours",
+            ticketInfo: "Free entry; parking fees apply",
+            bestSeason: "Late spring to early autumn",
+            accessibility: "Limited — terrain varies by trail",
+            overviewText: "Home to Mount Snowdon (Yr Wyddfa), the highest peak in Wales, Snowdonia offers breathtaking mountain landscapes, lakes, and hiking trails for all levels.",
+            highlights: [
+                "Mount Snowdon summit",
+                "Snowdon Mountain Railway",
+                "Llyn Padarn",
+                "Scenic hiking trails",
+                "Welsh mountain villages"
+            ],
+            historyText: "Designated a national park in 1951, Snowdonia is rich in Welsh culture, legends, and industrial heritage.",
+            tips: [
+                "Check weather before hiking",
+                "Start early for summit climbs",
+                "Book railway tickets in advance",
+                "Bring layered clothing"
+            ],
+            gettingThere: "Best accessed by car; trains to Bangor + bus connections available."
+        ),
+
+        AttractionDetail(
+            imageName: "attraction18",
+            title: "The Shard",
+            shortDescription: "London's tallest skyscraper with panoramic views",
+            region: "London",
+            tags: ["1-2 hours", "City Views", "Modern Landmark", "Architecture", "Family-friendly"],
+            timeNeeded: "1-2 hours",
+            ticketInfo: "~£32 adults, discounts for children",
+            bestSeason: "Year-round; sunset for best views",
+            accessibility: "Fully accessible",
+            overviewText: "Designed by Renzo Piano, The Shard is the tallest building in the UK. Its viewing platform offers 360° panoramic views across London's skyline.",
+            highlights: [
+                "Indoor & outdoor viewing decks",
+                "360° London panorama",
+                "Sunset city views",
+                "Interactive digital displays",
+                "Iconic glass architecture"
+            ],
+            historyText: "Completed in 2012, The Shard quickly became one of London's most recognizable modern landmarks.",
+            tips: [
+                "Book sunset time slot",
+                "Check weather for clear visibility",
+                "Combine with Borough Market visit",
+                "Allow extra time for security"
+            ],
+            gettingThere: "Located next to London Bridge Station (Underground & National Rail)."
         )
     ]
 }
