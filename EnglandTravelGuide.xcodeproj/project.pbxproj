@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27441D662F59A499003AEAB2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 27441D652F59A499003AEAB2 /* FirebaseAnalytics */; };
+		27441D682F59A4A0003AEAB2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 27441D672F59A4A0003AEAB2 /* FirebaseFunctions */; };
+		27441D6A2F59A4A0003AEAB2 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 27441D692F59A4A0003AEAB2 /* FirebaseRemoteConfig */; };
 		277DA2782F43B3BC00DA6B3C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 277DA2772F43B3BC00DA6B3C /* FirebaseAuth */; };
 		277DA27A2F43B3BC00DA6B3C /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 277DA2792F43B3BC00DA6B3C /* FirebaseCore */; };
 		277DA27C2F43B3BC00DA6B3C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 277DA27B2F43B3BC00DA6B3C /* FirebaseFirestore */; };
@@ -44,6 +47,9 @@
 			files = (
 				277DA27A2F43B3BC00DA6B3C /* FirebaseCore in Frameworks */,
 				277DA2782F43B3BC00DA6B3C /* FirebaseAuth in Frameworks */,
+				27441D682F59A4A0003AEAB2 /* FirebaseFunctions in Frameworks */,
+				27441D6A2F59A4A0003AEAB2 /* FirebaseRemoteConfig in Frameworks */,
+				27441D662F59A499003AEAB2 /* FirebaseAnalytics in Frameworks */,
 				277DA27C2F43B3BC00DA6B3C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,10 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27441D642F59A499003AEAB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		277D9E8A2F3F56A300DA6B3C = {
 			isa = PBXGroup;
 			children = (
 				277D9E952F3F56A400DA6B3C /* EnglandTravelGuide */,
+				27441D642F59A499003AEAB2 /* Frameworks */,
 				277D9E942F3F56A400DA6B3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +104,9 @@
 				277DA2772F43B3BC00DA6B3C /* FirebaseAuth */,
 				277DA2792F43B3BC00DA6B3C /* FirebaseCore */,
 				277DA27B2F43B3BC00DA6B3C /* FirebaseFirestore */,
+				27441D652F59A499003AEAB2 /* FirebaseAnalytics */,
+				27441D672F59A4A0003AEAB2 /* FirebaseFunctions */,
+				27441D692F59A4A0003AEAB2 /* FirebaseRemoteConfig */,
 			);
 			productName = EnglandTravelGuide;
 			productReference = 277D9E932F3F56A400DA6B3C /* EnglandTravelGuide.app */;
@@ -158,6 +175,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
@@ -174,7 +192,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alinaduvanovaapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -197,6 +215,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
@@ -213,7 +232,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alinaduvanovaapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -385,6 +404,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		27441D652F59A499003AEAB2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277DA2762F43B3BC00DA6B3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		27441D672F59A4A0003AEAB2 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277DA2762F43B3BC00DA6B3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		27441D692F59A4A0003AEAB2 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 277DA2762F43B3BC00DA6B3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
 		277DA2772F43B3BC00DA6B3C /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 277DA2762F43B3BC00DA6B3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
